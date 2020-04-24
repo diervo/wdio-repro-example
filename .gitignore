@@ -1,0 +1,13 @@
+# OS artifacts
+.DS_STORE
+
+# Tools artifacts
+node_modules
+coverage
+.eslintcache
+.vscode
+*.log
+*.pem
+tsconfig.tsbuildinfo
+dump.rdb
+logfile
