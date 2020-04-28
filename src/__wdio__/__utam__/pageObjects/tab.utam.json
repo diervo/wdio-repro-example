@@ -1,0 +1,18 @@
+{
+    "isRoot": true,
+    "selector": {
+        "css": "fancy-tabs"
+    },
+    "shadow": {
+        "elements": [
+            {
+                "name": "tabs",
+                "type": "actionable",
+                "selector": {
+                    "css": "#tabs"
+                },
+                "public": true
+            }
+        ]
+    }
+}
