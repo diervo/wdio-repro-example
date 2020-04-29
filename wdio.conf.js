@@ -1,5 +1,5 @@
 /* eslint no-unused-vars: 0 */
-const path = require('path');
+const { UtamWdioService } = require('wdio-utam-service');
 
 exports.config = {
     specs: ['src/**/__wdio__/*.spec.ts'],
@@ -21,9 +21,13 @@ exports.config = {
     connectionRetryTimeout: 90000,
     connectionRetryCount: 3,
     automationProtocol: 'webdriver',
-    services: ['selenium-standalone'],
+    services: [
+        'selenium-standalone',
+        [UtamWdioService, {}]
+    ],
     framework: 'jasmine',
     jasmineNodeOpts: {
         requires: ['ts-node/register'], // tranpile ts
+        helpers: [require.resolve('@babel/register')],
     }
 };
