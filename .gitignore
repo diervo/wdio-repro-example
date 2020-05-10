@@ -5,7 +5,6 @@
 node_modules
 coverage
 .eslintcache
-.vscode
 *.log
 *.pem
 tsconfig.tsbuildinfo

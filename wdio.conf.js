@@ -20,9 +20,9 @@ exports.config = {
     waitforTimeout: 90000,
     connectionRetryTimeout: 90000,
     connectionRetryCount: 3,
-    automationProtocol: 'webdriver',
+    automationProtocol: 'devtools',
     services: [
-        'selenium-standalone',
+        // 'selenium-standalone',
         [UtamWdioService, {}]
     ],
     framework: 'jasmine',
