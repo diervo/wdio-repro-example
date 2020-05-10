@@ -1,0 +1,22 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+      {
+        "name": "🌍 spec - chrome",
+        "env": {
+          "CHROME_HEADLESS": "false",
+        },
+        "type": "node",
+        "request": "launch",
+        "args": [
+          "--spec",
+          "${file}",
+        ],
+        "cwd": "${workspaceFolder}",
+        "autoAttachChildProcesses": true,
+        "program": "${workspaceRoot}/node_modules/.bin/wdio",
+        "skipFiles": ["<node_internals>/**"],
+        "console": "integratedTerminal"
+      }
+    ]
+  }

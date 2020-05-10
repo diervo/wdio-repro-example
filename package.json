@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "wdio",
+    "prepare": "yarn link && yarn link wdio-repro-example && yarn compile:utam",
     "build": "tsc -b",
     "compile:utam": "utam -c utam.config.js"
   },
@@ -22,7 +23,7 @@
     "@wdio/selenium-standalone-service": "^6.0.16",
     "ts-node": "^8.9.0",
     "typescript": "^3.8.3",
-    "wdio-utam-service": "^0.0.1-alpha4"
+    "wdio-utam-service": "^0.0.1-alpha6"
   },
   "volta": {
     "node": "12.16.2",

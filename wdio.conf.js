@@ -1,5 +1,6 @@
 /* eslint no-unused-vars: 0 */
 const { UtamWdioService } = require('wdio-utam-service');
+const path = require('path');
 
 exports.config = {
     specs: ['src/**/__wdio__/*.spec.ts'],
@@ -28,6 +29,7 @@ exports.config = {
     framework: 'jasmine',
     jasmineNodeOpts: {
         requires: ['ts-node/register'], // tranpile ts
-        helpers: [require.resolve('@babel/register')],
+        // helpers: [require.resolve('@babel/register')],
+        helpers: [path.join(__dirname, 'scripts/helpers/jasmine.js')],
     }
 };
