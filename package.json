@@ -23,7 +23,7 @@
     "@wdio/selenium-standalone-service": "^6.0.16",
     "ts-node": "^8.9.0",
     "typescript": "^3.8.3",
-    "wdio-utam-service": "^0.0.1-alpha6"
+    "wdio-utam-service": "^0.0.1-alpha7"
   },
   "volta": {
     "node": "12.16.2",
