@@ -1,4 +1,4 @@
-import TabPageObject from 'wdio-repro-example/pageObjects/tab';
+import TabPageObject from 'wdio-repro-example/pageObjects/fancyTabs';
 
 describe('first test',() => {
     it('PageObject is created correctly', async () => {
@@ -7,5 +7,9 @@ describe('first test',() => {
         const tabPageObject = await utam.load(TabPageObject);   
         const tabElement = await tabPageObject.getInternalTabsElement();
         expect(tabElement).toBeDefined();
+
+        // FIXME: bug for nested pages:
+        // const tabs = await tabPageObject.getFirstTabElement();
+        // console.log(tabs);
     });
 });

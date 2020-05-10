@@ -17,11 +17,12 @@
     },
     "elements": [
         {   
-            "name": "tabs",
+            "name": "firstTab",
             "type": "wdio-repro-example/pageObjects/tab",
             "selector": {
-                "css": "button"
-            }
+                "css": "button[slot=\"title\"]"
+            },
+            "public": true
         }
     ]
 }
